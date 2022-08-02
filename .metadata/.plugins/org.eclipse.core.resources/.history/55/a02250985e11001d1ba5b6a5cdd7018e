@@ -1,0 +1,15 @@
+package CH03;
+
+import java.util.Scanner;
+
+public class P_125_01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		for(char i = 'a';i<='z';i++) {
+			System.out.printf(i);
+		}
+	}
+
+}

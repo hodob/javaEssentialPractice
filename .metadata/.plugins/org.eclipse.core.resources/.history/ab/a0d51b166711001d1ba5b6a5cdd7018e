@@ -1,0 +1,24 @@
+package CH03;
+
+import java.util.Scanner;
+
+public class P_126_04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	
+		char day[] = {'일','월','화','수','목','금','토'};
+		
+		
+		Scanner sc = new Scanner(System.in);
+		int userInput = sc.nextInt();
+		System.out.println("정수를 입력하세요");
+//		System.out.println(day[userInput%7]);
+		
+		 
+		
+		
+	}
+
+}

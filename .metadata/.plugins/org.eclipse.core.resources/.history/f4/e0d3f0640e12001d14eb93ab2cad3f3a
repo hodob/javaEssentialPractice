@@ -1,0 +1,18 @@
+package ch04;
+
+public class P_187_06 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+	}
+
+}
+class Box{
+	private int width, height;
+	private char fillChar;
+	public Box {
+		
+	}
+}

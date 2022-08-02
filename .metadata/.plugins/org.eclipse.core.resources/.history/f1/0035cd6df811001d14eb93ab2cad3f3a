@@ -1,0 +1,21 @@
+package CH03;
+
+import java.util.Random;
+
+public class P_128_08 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("컴퓨터와 가위 바위 보 게임을 시작합니다.");
+		System.out.println("가위 바위 보!");
+		
+		Random random = new Random();
+		int pcNum = random.nextInt(2);
+		System.out.println(pcNum);
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package ch04;
+
+public class P_185_04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+	}
+
+}
+private class Phone {
+	String name,tel;
+	
+	public Phone (String name,String tel) {
+		this.name =name;
+		this.tel = tel;
+	}
+}

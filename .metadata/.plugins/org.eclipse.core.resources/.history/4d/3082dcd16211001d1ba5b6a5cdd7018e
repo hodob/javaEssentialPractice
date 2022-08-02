@@ -1,0 +1,26 @@
+package CH03;
+
+import java.util.Scanner;
+
+public class P_125_01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("알파벳소문자를 입력해주세요");
+//		char userInput = scanner.nextLine().charAt(0);
+		char userInput = 'e';
+		char j ='a';
+		for( char i = 'a';i<=userInput; i++) {
+			
+			for(;j<=userInput;j++) {
+				System.out.print(j);	
+			}	
+			System.out.println();
+			j++;
+		}
+	}
+
+}

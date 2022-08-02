@@ -1,0 +1,35 @@
+package ch04;
+
+import java.util.Scanner;
+
+public class P_184_02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("당ㅅ인의 이름과 전화번호 입력");
+		Scanner scanner = new Scanner(System.in);
+		String userInput = scanner.nextLine()	;
+		String userInput2 = scanner.nextLine();
+		Phone user1 = new Phone(userInput,userInput2);
+		Phone user2 = new Phone(userInput,userInput2);
+		System.out.println(user1.getName()+user1.getTel());
+		System.out.println(user2.getName()+user2.getTel());
+		
+
+		
+	}
+
+}
+class Phone{
+	private String name, tel;
+	public Phone(String name, String tel) {
+		this.name = name;
+		this.tel = tel;
+	}
+	public String getName() {
+		return name;
+	}
+	public String getTel() {
+		return tel;
+	}
+}
