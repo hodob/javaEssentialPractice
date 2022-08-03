@@ -2,5 +2,10 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="ch04.CircleManager"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="CH03.P_121_OpenChallenge"/>
+    <fullyQualifiedTypeName name="CH03.P_179_OpenChanllenge"/>
+    <fullyQualifiedTypeName name="p_234_01.Circle"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

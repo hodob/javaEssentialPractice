@@ -1,0 +1,22 @@
+package p_228_openChallenge;
+
+public class Fish extends GameObject{
+
+	public Fish(int startX, int startY, int distance) {
+		super(startX, startY, distance);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	protected void move() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	protected char getShape() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,23 @@
+package p_237_05;
+
+public class StringStack implements StackInterface{
+
+	@Override
+	public int length() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String pop() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean push(String ob) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

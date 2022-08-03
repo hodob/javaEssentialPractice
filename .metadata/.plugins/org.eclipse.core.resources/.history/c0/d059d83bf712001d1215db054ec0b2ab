@@ -1,0 +1,38 @@
+package p_228_openChallenge;
+
+
+public class Bear extends GameObject {
+
+	public Bear(int startX, int startY, int distance) {
+		super(startX, startY, distance);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	protected void move(char a) {// 이동한 후의 새로운 위치로 x y 변경
+		
+		
+		switch (a) {
+		case 'a':
+			y--;
+			break;
+		case 's':
+			x++;
+			break;
+		case 'd':
+			y++;
+			break;
+		case 'w':
+			x--;
+			break;
+		}
+
+	}
+
+	@Override
+	protected char getShape() {// 객체의 모양을 나타내는 문자 리턴
+
+		return 'B';
+	}
+
+}

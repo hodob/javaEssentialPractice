@@ -1,0 +1,54 @@
+package p_228_openChallenge;
+
+import java.util.Random;
+
+public class Fish extends GameObject {
+	Random random = new Random();
+	int count = 0;
+	int count2 = 0;
+
+	public Fish(int startX, int startY, int distance) {
+		super(startX, startY, distance);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	protected void move(char a) {
+
+		switch (random.nextInt(4)) {
+		case 1:
+			if (ifMove()) x++;
+				break;
+		case 2:
+			if (ifMove()) y++;
+			break;
+		case 3:
+			if (ifMove()) x--;
+			break;
+		case 4:
+			if (ifMove()) y--;
+			break;
+
+		}
+
+		count++;
+		count = count % 5;
+
+	}
+
+	@Override
+	protected char getShape() {
+		// TODO Auto-generated method stub
+		return '@';
+	}
+
+	public boolean ifMove() {
+		if (random.nextInt(5 - count) == 1) {
+			count2++;
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+}

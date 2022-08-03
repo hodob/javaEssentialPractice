@@ -1,0 +1,27 @@
+package p_238_Bouns_01;
+
+public class Circle implements Shape {
+	int radius = 12;
+	double mash;
+	
+	Circle(int a) {
+		radius = a;
+	}
+	
+	
+	
+	@Override
+	public void draw() {
+		// TODO Auto-generated method stub
+		System.out.println("반지름"+radius);
+		
+	}
+
+	@Override
+	public void getArea() {
+		// TODO Auto-generated method stub
+		System.out.println("코인의 면적은"+radius*radius*PI);
+
+	}
+
+}

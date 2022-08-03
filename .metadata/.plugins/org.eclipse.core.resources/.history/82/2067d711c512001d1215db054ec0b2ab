@@ -1,0 +1,8 @@
+package p_237_05;
+
+interface StackInterface {
+	int length();
+	String pop();
+	boolean push(String ob);
+	
+}

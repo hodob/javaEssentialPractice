@@ -1,0 +1,70 @@
+package p_228_openChallenge;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Game {
+	Random random = new Random();
+	char[][] field = new char[10][20];
+	
+	Bear bear = new Bear(0, 0, 1);
+	Fish fish = new Fish(random.nextInt(field.length), random.nextInt(field[0].length), 1);
+	public static void main(String[] args) {
+		Game game = new Game();
+		game.run();
+	}
+	
+	public void run() {
+		System.out.println("Bear 의 Fish 먹기 게임을시작합니다.");
+		
+		// 필드 초기화
+		for (int i = 0; i < field.length; i++) {
+			for (int j = 0; j < field[0].length; j++) {
+				field[i][j] = '-';
+			}
+		}
+		
+		// bear 처음위치입력
+		field[bear.getX()][bear.getY()] = bear.getShape();
+		
+		// fish 처음위치입력
+		field[fish.getX()][fish.getY()] = fish.getShape();
+
+		while (true) {
+			fieldUpdate();
+			System.out.print("왼쪽(a), 아래(s), 위(w), 오른쪽(d) >>");
+			Scanner scanner = new Scanner(System.in);
+			bear.move(scanner.next().charAt(0));
+			fish.move('a');
+			if (bear.collid(fish)) {
+				fieldUpdate();
+				break;
+			}
+		}
+	}
+	public void fieldUpdate() {
+		//필드초기화
+		for (int i = 0; i < field.length; i++) {
+			for (int j = 0; j < field[0].length; j++) {
+				field[i][j] = '-';
+			}
+		}
+		
+		try {
+			//곰 물고기 위치 업데이트
+			field[fish.getX()][fish.getY()] = fish.getShape();
+			field[bear.getX()][bear.getY()] = bear.getShape();
+		} catch (Exception e) {
+			System.out.println("이동할수 없습니다.");
+		}
+		
+		//필드표시
+		for (int i = 0; i < field.length; i++) {
+			for (int j = 0; j < field[0].length; j++) {
+				System.out.print(field[i][j]);
+			}
+			System.out.println();
+		}
+	}
+
+}

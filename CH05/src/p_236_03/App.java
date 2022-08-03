@@ -21,11 +21,20 @@ abstract class Calculator {
 	}
 }
 
-class Adder {
-	
+class Adder extends Calculator{
+
+	@Override
+	protected int calc() {
+		return a+b;
+	}
+
 }
 
-class Subtracter {
+class Subtracter extends Calculator{
+	@Override
+	protected int calc() {
+		return a-b;
+	}
 
 }
 
@@ -35,6 +44,8 @@ public class App {
 		// TODO Auto-generated method stub
 		Adder adder = new Adder();
 		Subtracter sub = new Subtracter();
+		adder.run();
+		sub.run();
 
 	}
 

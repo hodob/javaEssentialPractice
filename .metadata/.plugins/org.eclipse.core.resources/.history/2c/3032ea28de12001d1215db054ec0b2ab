@@ -1,0 +1,28 @@
+package p_228_openChallenge;
+
+public class Game {
+	
+	public static void main(String[] args) {
+		Game game = new Game();
+		game.run();
+	}
+	public void run() {
+		System.out.println("Bear 의 Fish 먹기 게임을시작합니다.");
+		char[][] field= new char[10][20];
+		//필드 초기화
+		for(int i=0;i<field.length;i++) {
+			for(int j =0; j<field[0].length;j++) {
+				field[i][j]='-';
+			}
+		}
+		//bear 입력
+		Bear bear =new Bear(0,0,1);
+		field[bear.getX()][bear.getY()]=bear.getShape();
+		for(int i=0;i<field.length;i++) {
+			for(int j =0; j<field[0].length;j++) {
+				System.out.print(field[i][j]);
+			}System.out.println();
+		}
+	}
+	
+}

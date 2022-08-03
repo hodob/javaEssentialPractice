@@ -1,0 +1,10 @@
+package p_238_06;
+
+public class MethodOverridingEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

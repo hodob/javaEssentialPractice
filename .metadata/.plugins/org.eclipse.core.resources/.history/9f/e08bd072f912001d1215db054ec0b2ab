@@ -1,0 +1,66 @@
+package p_228_openChallenge;
+
+import java.util.Random;
+
+public class Fish extends GameObject {
+	Random random = new Random();
+	int count = 0;
+	int count2 = 0;
+
+	public Fish(int startX, int startY, int distance) {
+		super(startX, startY, distance);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	protected void move(char a) {
+		if (count2 == 2) {
+		} else {
+			switch (random.nextInt(4)) {
+			case 1:
+				if (ifMove()) {
+					if(x==Game.field.length-1)System.out.println("이동할 수 없습니다.");
+					else x++;
+				}
+				break;
+			case 2:
+				if (ifMove()) {
+					if(y==Game.field[0].length-1) System.out.println("이동할 수 없습니다.");
+					else y++;
+				}
+				break;
+			case 3:
+				if (ifMove()) {
+					if(x==0) System.out.println("이동할 수 없습니다.");
+					else x--;
+				}
+				break;
+			case 4:
+				if (ifMove()) {
+					if(y==0)System.out.println("이동할 수 없습니다.");
+					else y--;
+				}
+				break;
+			}
+		}
+		count++;
+		count = (count == 5) ? 0 : count;
+//		System.out.println(count);
+	}
+
+	@Override
+	protected char getShape() {
+		// TODO Auto-generated method stub
+		return '@';
+	}
+
+	public boolean ifMove() {
+		if (random.nextInt(4 - count) == 1) {
+			count2++;
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+}

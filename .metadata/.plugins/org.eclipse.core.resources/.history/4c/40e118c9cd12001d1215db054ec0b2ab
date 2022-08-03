@@ -1,0 +1,23 @@
+package p_237_05;
+
+public class StringStack implements StackInterface{
+
+	@Override
+	public int length() {//스택에 들어ㅣㅆ는 문자열 개수 리턴
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String pop() {//스택의 톱에 있는 문자열 팝
+		// TODO Auto-generated method stub
+		return null; 
+	}
+
+	@Override
+	public boolean push(String ob) {//스택의 톱에 문자열 ob 푸시 삽입
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

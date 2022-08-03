@@ -1,0 +1,34 @@
+package p_237_05_못풀었음;
+
+public class StringStack implements StackInterface{
+
+	private int count=0;
+	String[] stack = new String[5];
+	
+	
+	@Override
+	public int length() {//스택에 들어ㅣㅆ는 문자열 개수 리턴
+		// TODO Auto-generated method stub
+		return count+1;
+	}
+
+	@Override
+	public String pop() {//스택의 톱에 있는 문자열 팝
+		// TODO Auto-generated method stub
+		return stack[--count];
+	}
+
+	@Override
+	public boolean push(String ob) {//스택의 톱에 문자열 ob 푸시 삽입
+		// TODO Auto-generated method stub
+		if(count==5) {
+			return false;
+		} else {
+			stack[count]=ob;
+			count++;
+			return true;
+		}
+		
+	}
+
+}
