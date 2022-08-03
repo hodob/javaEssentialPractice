@@ -15,7 +15,7 @@ public abstract class GameObject {
 	public int getY() {
 		return y;
 	}
-	public boolean collid(GameObject p) {//이 객체가 객체 p와 충돌했으면 true 리턴
+	public boolean collid(GameObject p) {//이 객체가 객체 p ㅗ아 충돌했으면 true 리턴
 		if(this.x ==p.getX()&&this.y==p.getY()) {
 			System.out.println("승리하셨습니다.");
 			return true;

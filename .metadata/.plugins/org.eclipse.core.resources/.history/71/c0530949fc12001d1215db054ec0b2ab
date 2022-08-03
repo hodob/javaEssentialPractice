@@ -41,6 +41,7 @@ public class Game {
 				break;
 			}
 		}
+		
 	}
 	public void fieldUpdate() {
 		//필드초기화
@@ -65,6 +66,18 @@ public class Game {
 
 	}
 }
+class getField{
 
+	
+	public static char[][] getField() {
+		return Game.field;
+	}
+
+	public static void setField(char[][] field) {
+		Game.field = field;
+	}
+	
+	
+}
 
 
